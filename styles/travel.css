@@ -8,10 +8,17 @@
 }
 
 .description {
-    text-align: center;
     font-size: 1rem;
     font-weight: 400;
+    line-height: 26px;
 }
+
+.title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
 
 .btn-primary {
     padding: 14px 34px;
@@ -75,7 +82,7 @@ nav {
     border-radius: 16px;
     background-size: cover;
     background-position: center;
-    width: 81.8%;
+    width: 81.25%;
     max-width: 1170px;
     margin: 0px 135px;
     padding: 106px 185px;
@@ -107,11 +114,14 @@ nav {
     font-size: 1rem;
     font-weight: 400;
 }
-.explore-inputs input,.when-container,
-.type-container{
+
+.explore-inputs input,
+.when-container,
+.type-container {
     border-radius: 8px;
     border: none;
 }
+
 .explore-inputs input {
     padding: 16px;
 }
@@ -135,6 +145,46 @@ select {
     margin-left: 8px;
 }
 
+/* Popular Tour Styles */
+.popular-tour {
+    width: 81.25%;
+    margin: 100px 135px;
+    display: flex;
+}
+
+.popular-tour-image,
+.popular-tour-content {
+    width: 50%;
+}
+
+.popular-tour-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popular-tour-image img {
+    border-radius: 16px;
+}
+
+.popular-tour-content p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.popular-tour-content {
+    padding-right: 200px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.description>ul li {
+    margin-bottom: 20px;
+}
+
+#read {
+    margin-top: 50px;
+}
 
 
 /* Responsive Query */
@@ -142,15 +192,50 @@ select {
     .menu {
         display: none;
     }
-    .header-element h3{
+
+    .header-element {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    nav{
+        margin: 10px auto;
+    }
+    .header-element h3 {
         font-size: 1.25rem;
         display: flex;
         gap: 5px;
     }
+
     .explore {
         width: 90%;
         max-width: 335px;
         padding: 32px 16px 62px;
+        margin: 0px auto;
+        /* margin-left: 20px;
+        margin-right: 10px; */
+    }
+
+    .popular-tour {
+        width: 90%;
+        margin: 10px 10px;
+        flex-direction: column;
+    }
+
+    .popular-tour-content {
+        padding-right: 5px;
+    }
+
+    .popular-tour-image,
+    .popular-tour-content {
+        width: 100%;
+    }
+    #read {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .popular-tour-image img{
+        width: 335px;
+height: 342px;
     }
 
     .explore h2 {
@@ -170,26 +255,32 @@ select {
         margin: 24px 32px;
         gap: 16px;
     }
-    .explore-inputs input{
+
+    .explore-inputs input {
         margin-bottom: 16px;
         padding: 16px 64px 16px 15px;
     }
+
     .when-container {
         padding: 16px 14px 16px 15px;
         display: flex;
         margin-bottom: 16px;
     }
+
     .when-container label {
         margin-right: 154px;
     }
+
     .type-container label {
         margin-right: 94px;
     }
-    .type-container{
+
+    .type-container {
         padding: 16px 14px 16px 15px;
         display: flex;
         margin-bottom: 16px;
     }
+
     .find-btn {
         margin-left: 8px;
         padding: 16px 35px 16px 35px;
