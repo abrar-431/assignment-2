@@ -54,13 +54,14 @@ nav {
     max-width: 1170px;
     display: flex;
     align-items: center;
-    margin: 50px;
-    margin-left: 180px;
+    margin: 50px 180px;
 }
-
+.menubar{
+    color: white;
+    background-color: white;
+}
 .menu {
     margin-left: 800px;
-    border: 2px solid tomato;
 }
 
 .menu>ul {
@@ -345,7 +346,7 @@ select {
     background: #FF5400;
     padding: 16px;
     position: absolute;
-    top: 4095px;
+    top: 4085px;
     right: 365px;
     transform: rotate(-19.628deg);
 }
@@ -417,7 +418,7 @@ footer {
 
 /* Responsive Query */
 @media screen and (max-width: 600px) {
-    .menu {
+    .menu-hidden{
         display: none;
     }
 
@@ -596,7 +597,7 @@ footer {
         height: 79.268px;
         padding: 10px;
         right: 1px;
-        top: 5000px;
+        top: 5090px;
         transform: rotate(-19.628deg) scale(0.7);
     }
 
@@ -631,5 +632,11 @@ footer {
     }
     .save-70 h4{
         font-size: 1.55rem;
+    }
+    .menubar{
+        color: #131318;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 }
