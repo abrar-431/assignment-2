@@ -190,6 +190,7 @@ select {
 .destination {
     width: 81.25%;
     margin: 0px 135px;
+    margin-bottom: 100px;
 }
 
 .destinatin-content h2 {
@@ -224,6 +225,63 @@ select {
     left: 50%;
 }
 
+/* Choose us Styles */
+.choose-us {
+    width: 81.25%;
+    margin: 0px 135px;
+    margin-bottom: 100px;
+}
+
+.choose-us-content h2 {
+    text-align: center;
+}
+
+.choose-us-content p {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.card-row {
+    display: flex;
+    gap: 24px;
+}
+
+.card-item {
+    width: 700px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 32px;
+    padding-right: 55px;
+}
+
+.card-item h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.card-item p {
+    color: #5A5A5D;
+    line-height: 26px;
+}
+
+#item-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+#item-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin: 0 400px;
+    margin-top: 24px;
+}
+
 /* Responsive Query */
 @media screen and (max-width: 600px) {
     .menu {
@@ -255,7 +313,8 @@ select {
     }
 
     .popular-tour,
-    .destination {
+    .destination,
+    .choose-us {
         width: 90%;
         margin: 10px 10px;
         flex-direction: column;
@@ -328,13 +387,41 @@ select {
         padding: 16px 35px 16px 35px;
     }
 
-    .row{
+    .row {
         display: grid;
         grid-template-columns: 1fr;
         gap: 16px;
     }
+
     .row img {
         width: 335px;
         height: 176px;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 335px;
+        height: 289px;
+        padding: 10px;
+    }
+
+    #item-3 {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .card-item h3, .destinatin-content h2, .popular-tour-content h3{
+        color: #131318;
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    .card-item p,.destinatin-content p, .popular-tour-content p {
+        font-size: 14px;
     }
 }
