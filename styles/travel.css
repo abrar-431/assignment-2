@@ -41,6 +41,8 @@
     color: #131318;
     font-size: 2.25rem;
     font-weight: 800;
+    display: flex;
+    gap: 10px;
 }
 
 .header-element img {
@@ -48,11 +50,17 @@
 }
 
 nav {
+    width: 81.25%;
+    max-width: 1170px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 50px 135px;
-    padding-right: 100px;
+    margin: 50px;
+    margin-left: 180px;
+}
+
+.menu {
+    margin-left: 800px;
+    border: 2px solid tomato;
 }
 
 .menu>ul {
@@ -84,7 +92,7 @@ nav {
     background-position: center;
     width: 81.25%;
     max-width: 1170px;
-    margin: 0px 135px;
+    margin: 0px auto;
     padding: 106px 185px;
     text-align: center;
 }
@@ -148,7 +156,7 @@ select {
 /* Popular Tour Styles */
 .popular-tour {
     width: 81.25%;
-    margin: 100px 135px;
+    margin: 100px auto;
     display: flex;
 }
 
@@ -189,7 +197,7 @@ select {
 /* Destination Styles */
 .destination {
     width: 81.25%;
-    margin: 0px 135px;
+    margin: 0px auto;
     margin-bottom: 100px;
 }
 
@@ -228,7 +236,7 @@ select {
 /* Choose us Styles */
 .choose-us {
     width: 81.25%;
-    margin: 0px 135px;
+    margin: 0px auto;
     margin-bottom: 100px;
 }
 
@@ -282,6 +290,131 @@ select {
     margin-top: 24px;
 }
 
+/* Newsletter Styles */
+.newsletter {
+    width: 81.25%;
+    margin: 0px auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.newsletter-form {
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-form p {
+    line-height: 26px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.newsletter-form hr {
+    background: rgba(19, 19, 24, 0.10);
+    margin-bottom: 24px;
+}
+
+.newsletter-form input {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    padding: 16px 251px 16px 20px;
+}
+
+.newsletter-form button {
+    padding: 16px 150px;
+    text-align: center;
+    width: 430px;
+    height: 52px;
+}
+
+.newsletter-form .mail {
+    margin-top: 16px;
+    margin-bottom: 38px;
+}
+
+
+.save-70 {
+    width: 324px;
+    height: 70px;
+    border-radius: 16px;
+    background: #FF5400;
+    padding: 16px;
+    position: absolute;
+    top: 4095px;
+    right: 365px;
+    transform: rotate(-19.628deg);
+}
+
+.save-70 h6 {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.save-70 h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    padding: 165px 335px;
+}
+
+.footer-img {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.footer-img span {
+    margin-left: 10px;
+}
+
+.footer-img h3,
+.footer-img span {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.footer-element p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 32px;
+    line-height: 26px;
+}
+
+.footer-img-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footer-element hr {
+    background: rgba(19, 19, 24, 0.10);
+    margin-bottom: 50px;
+}
+
+#copyright {
+    color: #131318;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    padding-left: 535px;
+}
+
 /* Responsive Query */
 @media screen and (max-width: 600px) {
     .menu {
@@ -294,7 +427,8 @@ select {
     }
 
     nav {
-        margin: 10px auto;
+        margin: 10px 10px;
+        margin-left: 0px;
     }
 
     .header-element h3 {
@@ -314,9 +448,10 @@ select {
 
     .popular-tour,
     .destination,
-    .choose-us {
+    .choose-us,
+    .newsletter {
         width: 90%;
-        margin: 10px 10px;
+        margin: 0px auto;
         flex-direction: column;
     }
 
@@ -413,15 +548,88 @@ select {
         margin-right: 10px;
     }
 
-    .card-item h3, .destinatin-content h2, .popular-tour-content h3{
-        color: #131318;
+    .card-item h3,
+    .destination-content h2,
+    .popular-tour-content h3,
+    .footer-img h3,
+    .footer-img span {
         font-size: 20px;
         font-weight: 800;
         margin-top: 24px;
         margin-bottom: 16px;
     }
 
-    .card-item p,.destinatin-content p, .popular-tour-content p {
+    .card-item p,
+    .destination-content p,
+    .popular-tour-content p,
+    .footer-element p {
         font-size: 14px;
+    }
+
+    .newsletter-image img {
+        width: 335px;
+        height: 300px;
+    }
+
+    .newsletter-form input {
+        padding: 16px 146px 16px 20px;
+    }
+
+    .newsletter-form {
+        padding: 24px;
+    }
+
+    .newsletter-form button {
+        width: 288px;
+        height: 52px;
+        padding: 14px 96px;
+    }
+
+    .newsletter-form input {
+        width: 125px;
+        height: 26px;
+    }
+
+    .save-70 {
+        position: absolute;
+        width: 214.023px;
+        height: 79.268px;
+        padding: 10px;
+        right: 1px;
+        top: 5000px;
+        transform: rotate(-19.628deg) scale(0.7);
+    }
+
+    .newsletter {
+        margin-top: 24px;
+    }
+
+    footer {
+        padding: 10px 20px;
+    }
+
+    footer {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    #copyright {
+        padding-left: 104px;
+    }
+
+    .footer-element p {
+        margin: 16px;
+    }
+
+    .footer-element hr {
+        margin: 24px 0px;
+    }
+
+    #copyright {
+        font-size: 14px;
+        padding-left: 100px;
+    }
+    .save-70 h4{
+        font-size: 1.55rem;
     }
 }
